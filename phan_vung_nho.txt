@@ -1,0 +1,7 @@
+5 vùng nhớ:
+- Stack: dùng để cấp phát bộ nhớ cho các tham số của hàm và biến cục bộ(biến local, input parameter của hàm).Read-write, sẽ được giải phóng khi ra khỏi block code/hàm. 
+- heap: Dùng để cấp phát bộ nhớ động như maloc, calloc,..sẽ được giải phóng khi gọi hàm free.Read-write
+- bss: Cũng dùng để lưu trữ các biến static, biến toàn cục nhưng chưa khởi tạo giá trị cụ thể(int a=0, a;).Read-write 
+- data: là nơi mà HDH sử dụng để khởi tạo các biến kiểu static, toàn cục của chương trình.Read-write, được giải phóng khi kết thúc chương trình
+- text: là nơi lưu trữ các mã lệnh đã được biên dịch của chương trình máy. Chỉ chịu sự chi phối của hệ điều hành, còn lại thì không. Chỉ có quyền Read, được giải phóng khi kết thúc chương trình.
+
